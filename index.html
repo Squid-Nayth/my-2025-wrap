@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 2025 Wrapped</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Les grands moments marquants de mon année 2025.">
+</head>
+<body>
+    
+    <div class="cursor"></div>
+
+    <header class="hero">
+        <h1 class="hero-title">My 2025 <span class="wrapped-text">Wrapped</span></h1>
+        <p class="hero-subtitle">Une année en revue</p>
+        <div class="scroll-indicator">
+            <span>Scroll pour découvrir</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <main id="timeline-container">
+        <!-- JS will populate this -->
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 - Nathan Michel</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" aria-label="Fermer">&times;</button>
+            <div class="modal-media-container">
+                <img src="" alt="" class="modal-image" id="modal-img">
+                <div class="modal-video-wrapper" id="modal-video-wrapper" style="display: none;">
+                    <!-- Video iframe or tag will be injected here if needed -->
+                </div>
+            </div>
+            <div class="modal-text">
+                <span class="modal-date" id="modal-date"></span>
+                <h2 class="modal-title" id="modal-title"></h2>
+                <p class="modal-description" id="modal-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
