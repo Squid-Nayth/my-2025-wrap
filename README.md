@@ -14,23 +14,3 @@ Pour une meilleure expérience (chargement des modules JS ou assets), il est rec
 ```bash
 npx serve .
 ```
-
-## Comment modifier le contenu
-Tout le contenu se trouve dans le fichier `script.js` au début du fichier, dans la variable `timelineData`.
-
-### Ajouter une image ou une vidéo
-Modifiez les objets dans le tableau `timelineData` :
-```javascript
-{
-    date: "Date",
-    title: "Titre",
-    description: "Description...",
-    image: "./chemin/vers/image.jpg", // Remplacez "#" par le chemin réel
-    type: "image" // ou "video" si vous implémentez le support vidéo
-}
-```
-Les images doivent être placées dans un dossier (ex: `assets/`) à la racine du projet.
-
-## Personnalisation
-- **Couleurs/Style** : Variables CSS dans `style.css` (`:root`).
-- **Animations** : Fonction `initAnimations()` dans `script.js`.
