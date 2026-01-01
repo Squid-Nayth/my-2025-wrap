@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nathan Michel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 2rem;
+        }
+        .about-content {
+            max-width: 800px;
+            text-align: center;
+        }
+        .about-title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        .about-text {
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html" style="color:inherit; text-decoration:none;">Nathan Michel</a></div>
+        <div class="nav-links">
+            <a href="about.html" class="nav-item">About</a>
+            <a href="https://twitter.com" target="_blank" class="nav-item">Twitter</a>
+            <a href="https://linkedin.com" target="_blank" class="nav-item">Linkedin</a>
+        </div>
+    </nav>
+
+    <div class="about-section">
+        <div class="about-content">
+            <h1 class="about-title">À propos</h1>
+            <p class="about-text">
+                Bienvenue sur mon récapitulatif de l'année 2025. <br>
+                Une année marquée par des défis, des apprentissages et des réussites.<br>
+                Développé avec passion pour le web créatif.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+        // Use a simpler script for this page or reuse simplified logic
+        function initCursor() {
+            const cursor = document.querySelector('.cursor');
+            if (!cursor) return;
+            document.addEventListener('mousemove', (e) => {
+                gsap.set(cursor, { x: e.clientX, y: e.clientY });
+            });
+            const clickables = document.querySelectorAll('a, button');
+            clickables.forEach(el => {
+                el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
+                el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+            });
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+             initCursor();
+             gsap.from(".about-content", {y: 50, opacity: 0, duration: 1, ease: "power3.out"});
+        });
+    </script>
+</body>
+</html>
