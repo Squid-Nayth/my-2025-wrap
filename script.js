@@ -2,93 +2,115 @@ const timelineData = [
     {
         date: "Janvier 2025",
         title: "Délégué de classe",
-        description: "J’ai été élu délégué de ma classe pour la première fois de toute ma scolarité (Personne ne voulait le poste).",
-        image: "#",
+        description: "J’ai été élu délégué de ma classe pour la première fois de toute ma scolarité (Personne ne voulait le poste 🤣).",
+        images: ["assets/École/2025-26.jpg"],
         type: "image"
     },
     {
         date: "Février 2025",
         title: "Séparation",
         description: "J’ai perdu quelqu’un que je ne voulais vraiment pas perdre. (Merci la vie, très bon timing)",
-        image: "#",
-        type: "image"
+        images: null,
+        type: "text"
     },
     {
         date: "Mars 2025",
         title: "Début d'une période sombre",
-        description: "J’ai traversé 9 mois de dépression et de crises d’anxiété sévères, seul. (J’ai survécu, donc techniquement : succès !).",
-        image: "#",
-        type: "image"
+        description: "J’ai traversé 9 mois de dépression et de crises d’anxiété sévères, seul. (J’ai survécu !).",
+        images: null,
+        type: "text"
     },
     {
         date: "Avril 2025",
         title: "Thérapie",
         description: "J’ai fait ma première (et dernière) année de suivi chez un psychologue. (Je ne reverrai plus jamais la couleur des 200€ que j'ai laché pour ça).",
-        image: "#",
-        type: "image"
+        images: null,
+        type: "text"
     },
     {
         date: "Mai 2025",
         title: "Le 7ème Art",
         description: "J’ai découvert le cinéma pour la première fois de ma vie.(Finalement c'est plutôt sympa de regarder des films avec des inconnues).",
-        image: "#",
+        images: ["assets/Cinéma/2025-015.jpg"],
         type: "image"
     },
     {
         date: "Juin 2025",
         title: "Réussite Académique",
         description: "J’ai réussi ma première année d’études supérieures en informatique. (Merci Chat GPT).",
-        image: "#",
         type: "image"
     },
     {
         date: "Juillet 2025",
         title: "Sensations Fortes",
-        description: "J’ai découvert un parc d’attractions pour la première fois de ma vie : Disneyland Paris. (J'ai pleuré toutes les larmes de mon corpsà la sortie des montagnes russes).",
-        image: "#",
+        description: "J’ai découvert un parc d’attractions pour la première fois de ma vie : Disneyland Paris. (J'ai pleuré toutes les larmes de mon corps à la sortie des montagnes russes 😭).",
+        images: [
+            "assets/Disney/IMG_2597.jpg",
+            "assets/Disney/IMG_2598.jpg",
+            "assets/Disney/IMG_2600.jpg",
+            "assets/Disney/IMG_2604.jpg",
+            "assets/Disney/IMG_2614.jpg",
+            "assets/Disney/2025-10.jpg",
+            "assets/Disney/2025-11.jpg"
+        ],
         type: "image"
     },
     {
         date: "Août 2025",
         title: "Wow, L'entrepreneur !",
         description: "J’ai ouvert ma micro-entreprise de développement web : EVA STUDIO, j’ai pu collaborer avec 3 clients différents en l’espace de 5 mois après l’ouverture de cette dernière.",
-        image: "#",
+        images: [
+            "assets/l'entrepreneur/2025-22.jpg",
+            "assets/l'entrepreneur/7E3C3149-80AE-4778-89A7-1AE258848741 (1).png"
+        ],
         type: "image"
     },
     {
         date: "Août 2025",
         title: "Setup de Pro",
         description: "J’ai construit un setup de travail confortable et bien équipé. (Attention on peut vite devenir accro à ça).",
-        image: "#",
+        images: [
+            "assets/Setup/2025-02.jpg",
+            "assets/Setup/2025-27.jpg",
+
+        ],
         type: "image"
     },
 
     {
         date: " Septembre 2025",
         title: "Première visite au Musée",
-        description: "J’ai visité un Musée pour la première fois de ma vie (J'ai confondu un pingouin et un manchot une fois)",
-        image: "#",
+        description: "J’ai visité un Musée pour la première fois de ma vie (J'ai confondu un pingouin et un manchot une fois 😂)",
+        images: [
+            "assets/Musée/2025-18.jpg",
+            "assets/Musée/IMG_0808.jpg"
+        ],
         type: "image"
     },
     {
         date: "Septembre 2025",
         title: "Paris à Vélo",
-        description: "J’ai roulé à vélo électrique dans les rues de Paris après 7 ans sans pédaler. J'ai visité la Tour Eiffel, l'Arc de Triomphe, La Défense et la Tour Montparnasse en une journée.",
-        image: "#",
+        description: "J’ai roulé à vélo dans les rues de Paris après 7 ans sans pédaler. J'ai visité la Tour Eiffel, l'Arc de Triomphe, et La Défense en une journée.",
+        images: [
+            "assets/Paris/2025-19.jpg",
+            "assets/Paris/2025-20.jpg",
+            "assets/Paris/Paris-01.jpg",
+            "assets/Paris/Paris.jpg"
+        ],
         type: "image"
     },
     {
         date: "Octobre - Décembre 2025",
         title: "Stage",
-        description: "J’ai effectué mon premier stage aux côtés du CTO d’une ESN. (Entre nous j'ai été pistonné par un pote de la boite)",
-        image: "#",
+        description: "J’ai effectué mon premier stage aux côtés du CTO d’une ESN. (J'ai été pistonné par un pote de la boite 😅)",
+        images: ["assets/Stage/6440e942-37fb-4d86-878b-f7bfad82eaca.jpg"],
         type: "image"
     }
 ];
 
 const bilanData = {
     title: "Bilan",
-    description: "Pas de nouvelles bonnes rencontres cette année hormis sur le plan professionnel, je me suis rendu compte que j'avais besoin de passer plus de temps avec moi-même qu'avec mes amis ou ma famille. J'ai passé beaucoup de temps cette année à développer et à approfondir mes connaissances sur le développement web créatif ainsi que sur L'UI/UX design. Gagner, perdre, continuer: c'est la vie."
+    description: "Pas de nouvelles bonnes rencontres cette année hormis sur le plan professionnel, je me suis rendu compte que j'avais besoin de passer plus de temps avec moi-même qu'avec d'autres personnes. J'ai passé beaucoup de temps cette année à développer et à approfondir mes connaissances sur le développement web créatif ainsi que sur L'UI/UX design. Gagner, perdre, continuer: c'est la vie."
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -127,18 +149,33 @@ function renderTimeline() {
     const container = document.getElementById('timeline-container');
 
     // 1. Render main timeline
+
     timelineData.forEach((item, index) => {
         const div = document.createElement('div');
         div.classList.add('timeline-item');
 
-        const imgSrc = item.image === '#' ? createPlaceholder(item.title) : item.image;
+        let visualContent = '';
+        if (item.images && item.images.length > 0) {
+            let imgsHTML = '';
+            item.images.forEach((src, i) => {
+                const isActive = i === 0 ? 'active' : '';
+                // Handle local assets vs placeholder if somehow needed, but we normalized data
+                const finalSrc = src;
+                imgsHTML += `<img src="${finalSrc}" alt="${item.title} - ${i + 1}" class="timeline-img ${isActive}">`;
+            });
+
+            // If multiple images, we'll need a container that supports the slideshow
+            visualContent = `
+                <div class="img-container ${item.images.length > 1 ? 'slideshow' : ''}" data-interval="3000">
+                    ${imgsHTML}
+                </div>
+            `;
+        }
 
         div.innerHTML = `
             <div class="timeline-dot"></div>
             <div class="timeline-visual">
-                <div class="img-container">
-                    <img src="${imgSrc}" alt="${item.title}" class="timeline-img">
-                </div>
+                ${visualContent}
             </div>
             <div class="timeline-content">
                 <span class="timeline-date">${item.date}</span>
@@ -188,6 +225,29 @@ function renderTimeline() {
         </div>
     `;
     container.appendChild(futureDiv);
+
+    // Start slideshows
+    initSlideshows();
+}
+
+function initSlideshows() {
+    const slideshows = document.querySelectorAll('.img-container.slideshow');
+    slideshows.forEach(container => {
+        const images = container.querySelectorAll('.timeline-img');
+        if (images.length <= 1) return;
+
+        let currentIndex = 0;
+
+        // Use a random delay start to avoid all cycling exactly at same time
+        setTimeout(() => {
+            setInterval(() => {
+                const nextIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.remove('active');
+                images[nextIndex].classList.add('active');
+                currentIndex = nextIndex;
+            }, 4000); // 4s per slide for better viewing
+        }, Math.random() * 1000);
+    });
 }
 
 function createPlaceholder(text) {
